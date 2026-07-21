@@ -1,26 +1,3 @@
-// import { Bell, User } from "lucide-react";
-
-// function Navbar() {
-//   return (
-//     <nav style={{
-//       display: 'flex',
-//       justifyContent: 'space-between',
-//       alignItems: 'center',
-//       padding: '15px 30px',
-//       backgroundColor: '#1e293b',
-//       color: 'white'
-//     }}>
-//       <h2 style={{ margin: 0, fontSize: '20px' }}>Student Management Dashboard</h2>
-//       <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-//         <Bell size={20} style={{ cursor: 'pointer' }} />
-//         <User size={20} style={{ cursor: 'pointer' }} />
-//       </div>
-//     </nav>
-//   );
-// }
-
-// export default Navbar;
-
 
 
 import { useState } from "react";
