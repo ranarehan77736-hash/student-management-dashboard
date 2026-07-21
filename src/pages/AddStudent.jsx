@@ -59,7 +59,7 @@ function AddStudent() {
           boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
         }}
       >
-        <div style={{ marginBottom: "15px" }}>
+        {/* <div style={{ marginBottom: "15px" }}>
           <label style={{ display: "block", fontWeight: "600", marginBottom: "5px" }}>
             Full Name *
           </label>
@@ -72,10 +72,43 @@ function AddStudent() {
             required
             style={{ width: "100%", padding: "10px", borderRadius: "6px", border: "1px solid #ccc" }}
           />
-        </div>
+        </div> */}
 
-        <div style={{ marginBottom: "15px" }}>
-          <label style={{ display: "block", fontWeight: "600", marginBottom: "5px" }}>
+
+
+
+
+       <div style={{ marginBottom: "15px", textAlign: "left" }}>
+  <label style={{ display: "block", fontWeight: "600", marginBottom: "5px", textAlign: "left" }}>
+    Full Name *
+  </label>
+  <input
+    type="text"
+    name="name"
+    value={formData.name}
+    onChange={handleChange}
+    placeholder="Enter student name"
+    required
+    style={{
+      width: "100%",
+      padding: "10px",
+      borderRadius: "6px",
+      border: "1px solid #ccc",
+      textAlign: "left",       // 👈 Input text aur placeholder ko left align karega
+      boxSizing: "border-box"  // 👈 Width ko exact parent container ke sath match rakhega
+    }}
+  />
+</div>
+
+     
+
+
+
+
+
+
+<div style={{ marginBottom: "15px", textAlign: "left" }}>
+          <label style={{ display: "block", fontWeight: "600", marginBottom: "5px", textAlign: "left" }}>
             Email Address *
           </label>
           <input
@@ -85,12 +118,19 @@ function AddStudent() {
             onChange={handleChange}
             placeholder="Enter student email"
             required
-            style={{ width: "100%", padding: "10px", borderRadius: "6px", border: "1px solid #ccc" }}
+            style={{
+              width: "100%",
+              padding: "10px",
+              borderRadius: "6px",
+              border: "1px solid #ccc",
+              textAlign: "left",
+              boxSizing: "border-box"
+            }}
           />
         </div>
 
-        <div style={{ marginBottom: "15px" }}>
-          <label style={{ display: "block", fontWeight: "600", marginBottom: "5px" }}>
+        <div style={{ marginBottom: "15px", textAlign: "left" }}>
+          <label style={{ display: "block", fontWeight: "600", marginBottom: "5px", textAlign: "left" }}>
             Phone Number
           </label>
           <input
@@ -99,19 +139,34 @@ function AddStudent() {
             value={formData.phone}
             onChange={handleChange}
             placeholder="Enter phone number"
-            style={{ width: "100%", padding: "10px", borderRadius: "6px", border: "1px solid #ccc" }}
+            style={{
+              width: "100%",
+              padding: "10px",
+              borderRadius: "6px",
+              border: "1px solid #ccc",
+              textAlign: "left",
+              boxSizing: "border-box"
+            }}
           />
         </div>
-
-        <div style={{ marginBottom: "20px" }}>
-          <label style={{ display: "block", fontWeight: "600", marginBottom: "5px" }}>
+       <div style={{ marginBottom: "20px", textAlign: "left" }}>
+          <label style={{ display: "block", fontWeight: "600", marginBottom: "5px", textAlign: "left" }}>
             Class *
           </label>
           <select
             name="studentClass"
             value={formData.studentClass}
             onChange={handleChange}
-            style={{ width: "100%", padding: "10px", borderRadius: "6px", border: "1px solid #ccc" }}
+            style={{
+              width: "100%",
+              padding: "10px",
+              borderRadius: "6px",
+              border: "1px solid #ccc",
+              textAlign: "left",
+              textAlignLast: "left",
+              boxSizing: "border-box",
+              backgroundColor: "#fff"
+            }}
           >
             <option value="Class 9">Class 9</option>
             <option value="Class 10">Class 10</option>
