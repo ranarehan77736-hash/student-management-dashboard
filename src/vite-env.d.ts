@@ -1,4 +1,4 @@
-declare module "*.jsx" {
-  const content: any;
-  export default content;
-}
+/// <reference types="vite/client" />
+
+declare module "*.jsx";
+declare module "*.js";
